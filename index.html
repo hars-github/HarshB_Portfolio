@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Portfolio</title>
+
+    <style>
+      body {
+        background-color: #bec4cb;
+        padding: 20px;
+      }
+  
+      .card-container {
+        background-color: #eadada;
+        display: flex;
+        flex-wrap: wrap; /* Allows wrapping of cards to the next line */
+        gap: 20px; /* Space between cards */
+        justify-content: center; /* Center cards horizontally */
+      }
+  
+      .card {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        padding: 20px;
+        text-align: center;
+      }
+  
+      /* .card img {
+        max-width: 100%;
+        border-radius: 8px;
+      }
+  
+      .card h3 {
+        margin-top: 15px;
+        font-size: 1.5rem;
+      } */
+  
+      #typewriter::after {
+    content: '|';
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+  }
+
+  
+      .card p {
+        color: #555;
+      }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</head>
+<body style="background: linear-gradient(45deg, #001F3D, #0C0C0C);">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">My Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Harsh B.</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#carouselExampleCaptions">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#achievements">Achievements</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#contacts">Contact Details</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li> -->
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+              <!-- Here is the details of developer -->
+<div style="margin:4%;">
+              <div class="card mb-3" style="width:100%;margin-top: 80px;box-shadow: 0px 1px 5px 2px;text-shadow: 0px 0px 3px 3px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="images/myphoto.jpg" class="img-fluid rounded-start" style="width: 300px;height: 400px;" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <p class="card-title" style="font-size: 80px">Harsh Bharti</p>
+                      <p id="typewriter" class="card-text type" style="font-size: 20px; font-family: monospace; white-space: pre-wrap;"></p>
+
+                      <!-- <p id="typingtext" class="card-text typing-text" style="font-size: 20px;text-shadow: offset-x offset-y blur-radius color;">I am an ASP.NET with C# developer specializing in building robust web and desktop 
+                        applications using technologies like ASP.NET Core, MVC, Web API, and Windows Forms. With expertise in SQL Server for database integration, 
+                        jQuery for dynamic interfaces, and a focus on scalable and secure solutions, I deliver high-quality applications tailored to client needs. 
+                        I aim to create efficient, user-friendly experiences while adhering to industry best practices.</p> -->
+                      <p class="card-text"><small class="text-body-secondary">Thanks</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="container px-4 text-center mt-5" id="skills" style="color:aliceblue ; font-size: larger; ">
+                <h1>Skills Summary</h1>
+                <div class="row gx-5"  >
+                  <div class="col">
+                   <div class="p-3"><b>Languages</b></div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3">C#, C, C++, Java, SQL. </div>
+                  </div>
+                </div>
+                <div class="row gx-5">
+                  <div class="col">
+                   <div class="p-3"><b>Framework</b></div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3">ASP.NET, ASP.NET MVC, React JS.  </div>
+                  </div>
+                </div>
+                <div class="row gx-5">
+                  <div class="col">
+                   <div class="p-3"><b>Developer Tools</b></div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3">Visual Studio, VS Code, MSSQL, Git, SVN.  </div>
+                  </div>
+                </div>
+                <div class="row gx-5">
+                  <div class="col">
+                   <div class="p-3"><b>Databases</b></div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3">SQL, MySql, MongoDB.  </div>
+                  </div>
+                </div>
+              </div>
+            <div id="carouselExampleCaptions" class="carousel slide text-center mt-5">
+              <h1 style="color:aliceblue">Projects</h1>
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <!-- <div class="carousel-item active">
+                  <div class="card-container">
+                  <div class="card" style="width: 25rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 25rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 25rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                  </div>
+                  </div>
+                   <div class="carousel-caption d-none d-md-block">
+                    
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div> 
+                </div> -->
+                <div class="carousel-item active">
+                  <div class="card-container">
+                  <div class="card " style="width: 25rem;">
+                    <div class="card-body">
+                      <h5 class="card-title" style="color:aliceblue">Digital Library </h5>
+                      <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                      <p class="card-text"> In this project, we will show study material for the competitive exams.</p>
+                      <!-- <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a> -->
+                    </div>
+                  </div>
+                  <div class="card " style="width: 25rem;">
+                    <div class="card-body">
+                       <h5 class="card-title">Library Management System</h5>
+                      <!--<h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                      <p class="card-text"> This application is made for issuing and managing books and journals for 
+                        members such as students, faculty. It reduces 90% of paper work because every work is in this site. </p>
+                      <!-- <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a> -->
+                    </div>
+                  </div>
+                  <div class="card " style="width: 25rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Library Import/Migration Application</h5>
+                      <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                      <p class="card-text"> By this, we can import and migrate the database also save 95% time. </p>
+                      <!-- <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a> -->
+                    </div>
+                  </div>
+                  </div>
+                  <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                  <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div> -->
+                </div>
+                <div class="carousel-item">
+                  <div class="card-container">
+                    <div class="card " style="width: 25rem;">
+                      <div class="card-body">
+                        <h5 class="card-title">Brain Clash </h5>
+                        <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                        <p class="card-text">This project is to help students in their studies and increase brain efficiency by 40%. In this 
+                          educational game project, we used HTML, CSS, and JavaScript as the front-end and C++ as the Backend. </p>
+                        <!-- <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a> -->
+                      </div>
+                    </div>
+                    <div class="card " style="width: 25rem;">
+                      <div class="card-body">
+                        <h5 class="card-title">Measurement Matrix</h5>
+                        <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                        <p class="card-text">This application is made for construction project that how much project or tender made basically track the work.</p>
+                        <!-- <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a> -->
+                      </div>
+                    </div>
+                    <!-- <div class="card " style="width: 25rem;">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title 6</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                      </div>
+                    </div> -->
+                    </div>
+                  <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div> -->
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" style="background-color: #555;" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" style="background-color: #555;" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+
+            <div class="container px-4 text-center mt-5" id="achievements" style="color:aliceblue; font-size: larger; ">
+              <h1>Achievements</h1>
+              <div class="row gx-5">
+                <div class="col">
+                 <div class="p-3"><b> Google Cloud Ready Facilator Program </b></div>
+                </div>
+                <div class="col">
+                  <div class="p-3"><a href="https://www.cloudskillsboost.google/public_profiles/4df715ac-cda7-448d-84e6-cad44520f3fc">Google Cloud Skill Badges</a></div>
+                </div>
+              </div>
+              <div class="row gx-5">
+                <div class="col">
+                 <div class="p-3"><b> Learn to Earn Cloud Security Challange</b></div>
+                </div>
+                <div class="col">
+                  <div class="p-3"><a href="https://www.cloudskillsboost.google/public_profiles/4df715ac-cda7-448d-84e6-cad44520f3fc">Google Cloud Skill Badges</a>  </div>
+                </div>
+              </div>
+             
+            </div>
+
+            <div class="container px-4 text-center mt-5" id="contacts">
+              <h1 style="color:aliceblue">Contact Details</h1>
+              <div class="row gx-5">
+                <div class="col">
+                 <div class="p-3"><img src="images/download (2).png" style="width: 50px;height: 50px;"/><h3 style="color:aliceblue">harshbharti61@gmail.com </h3></b></div>
+                </div>
+                <div class="col">
+                  <div class="p-3"><a href="https://www.linkedin.com/in/harsh-bharti-b42b011a1/
+                    "><img src="images/download.png" style="width: 50px;height: 50px;"/></a></div>
+                </div>
+                <div class="col">
+                  <div class="p-3"><a href="https://github.com/hars-github
+                    "><img src="images/download (1).png" style="width: 50px;height: 50px;"/></a></div>
+                </div>
+              </div>
+              
+             
+            </div>
+          </div>
+          <script>
+            const text = `I am an ASP.NET with C# developer specializing in building robust web and desktop applications using technologies like ASP.NET Core, MVC, Web API, and Windows Forms. With expertise in SQL Server for database integration, jQuery for dynamic interfaces, and a focus on scalable and secure solutions, I deliver high-quality applications tailored to client needs. I aim to create efficient, user-friendly experiences while adhering to industry best practices.`;
+          
+            const element = document.getElementById("typewriter");
+            let index = 0;
+          
+            function typeWriter() {
+              if (index < text.length) {
+                element.textContent += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 30); // Adjust speed (30 ms per letter)
+              }
+            }
+          
+            typeWriter();
+          </script>
+          
+</body>
+</html>
